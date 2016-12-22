@@ -1,4 +1,4 @@
-package com.elixirbrew.jceciliano.elixirbrew.models.Beer;
+package com.elixirbrew.jceciliano.elixirbrew.models;
 
 import org.parceler.Parcel;
 
