@@ -10,7 +10,7 @@ import org.parceler.Parcel;
  * Beer model, stores each beer object
  */
 @Parcel(Parcel.Serialization.BEAN)
-public class BeerModel {
+public class MBeer {
     private String id;
     private String name;
     private String nameDisplay;
@@ -23,13 +23,13 @@ public class BeerModel {
     private String statusDisplay;
     private String createDate;
     private String updateDate;
-    private GlassModel glass;
-    private StyleModel style;
+    private MGlass glass;
+    private MStyle style;
 
     /**
      * empty constructor
      */
-    public BeerModel() {
+    public MBeer() {
     }
 
     /**
@@ -49,7 +49,7 @@ public class BeerModel {
      * @param glass
      * @param style
      */
-    public BeerModel(String id, String name, String nameDisplay, String description, int abv, int glasswareId, int styleId, Character isOrganic, String status, String statusDisplay, String createDate, String updateDate, GlassModel glass, StyleModel style) {
+    public MBeer(String id, String name, String nameDisplay, String description, int abv, int glasswareId, int styleId, Character isOrganic, String status, String statusDisplay, String createDate, String updateDate, MGlass glass, MStyle style) {
         this.id = id;
         this.name = name;
         this.nameDisplay = nameDisplay;
@@ -162,19 +162,19 @@ public class BeerModel {
         this.updateDate = updateDate;
     }
 
-    public GlassModel getGlass() {
+    public MGlass getGlass() {
         return glass;
     }
 
-    public void setGlass(GlassModel glass) {
+    public void setGlass(MGlass glass) {
         this.glass = glass;
     }
 
-    public StyleModel getStyle() {
+    public MStyle getStyle() {
         return style;
     }
 
-    public void setStyle(StyleModel style) {
+    public void setStyle(MStyle style) {
         this.style = style;
     }
 }

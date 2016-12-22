@@ -6,19 +6,20 @@ import org.parceler.Parcel;
  * Created by jceciliano on 20/12/16.
  */
 
+
 /**
- * Contains the details about the assigned glass (id, name). The name of the glass is the type of glass in which the beer is best served.
+ * Style Categories
  */
 @Parcel(Parcel.Serialization.BEAN)
-public class GlassModel {
+public class MStyleCategory {
     private int id;
     private String name;
     private String createDate;
 
     /**
-     * empty constructor
+     * Empty constructor
      */
-    public GlassModel() {
+    public MStyleCategory() {
     }
 
     /**
@@ -27,7 +28,7 @@ public class GlassModel {
      * @param name
      * @param createDate
      */
-    public GlassModel(int id, String name, String createDate) {
+    public MStyleCategory(int id, String name, String createDate) {
         this.id = id;
         this.name = name;
         this.createDate = createDate;
@@ -57,4 +58,3 @@ public class GlassModel {
         this.createDate = createDate;
     }
 }
-

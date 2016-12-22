@@ -9,17 +9,17 @@ import java.util.List;
  */
 
 @Parcel(Parcel.Serialization.BEAN)
-public class BeersSearch {
+public class MBeersSearch {
     private int currentPage;
     private int numberOfPages;
     private int totalResults;
-    private List<BeerModel> data;
+    private List<MBeer> data;
     private String status;
 
     /**
      * Empty constructor
      */
-    public BeersSearch() {
+    public MBeersSearch() {
     }
 
     /**
@@ -30,7 +30,7 @@ public class BeersSearch {
      * @param data
      * @param status
      */
-    public BeersSearch(int currentPage, int numberOfPages, int totalResults, List<BeerModel> data, String status) {
+    public MBeersSearch(int currentPage, int numberOfPages, int totalResults, List<MBeer> data, String status) {
         this.currentPage = currentPage;
         this.numberOfPages = numberOfPages;
         this.totalResults = totalResults;
@@ -62,11 +62,11 @@ public class BeersSearch {
         this.totalResults = totalResults;
     }
 
-    public List<BeerModel> getData() {
+    public List<MBeer> getData() {
         return data;
     }
 
-    public void setData(List<BeerModel> data) {
+    public void setData(List<MBeer> data) {
         this.data = data;
     }
 

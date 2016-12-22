@@ -10,10 +10,10 @@ import org.parceler.Parcel;
  * The style object contains details about the assigned style: id, categoryId, category (id, name), name, description, ibuMin, ibuMax, abvMax, srmMin, srmMax, ogMin, fgMin, fgMax).
  */
 @Parcel(Parcel.Serialization.BEAN)
-public class StyleModel {
+public class MStyle {
     private int id;
     private int categoryId;
-    private StyleCategoryModel category;
+    private MStyleCategory category;
     private String name;
     private String shortName;
     private String description;
@@ -32,7 +32,7 @@ public class StyleModel {
     /**
      * empty constructor
      */
-    public StyleModel() {
+    public MStyle() {
     }
 
     /**
@@ -55,7 +55,7 @@ public class StyleModel {
      * @param createDate
      * @param updateDate
      */
-    public StyleModel(int id, int categoryId, StyleCategoryModel category, String name, String shortName, String description, int ibuMin, int ibuMax, int abvMin, int abvMax, int srmMin, int srmMax, int ogMin, int fgMin, int fgMax, String createDate, String updateDate) {
+    public MStyle(int id, int categoryId, MStyleCategory category, String name, String shortName, String description, int ibuMin, int ibuMax, int abvMin, int abvMax, int srmMin, int srmMax, int ogMin, int fgMin, int fgMax, String createDate, String updateDate) {
         this.id = id;
         this.categoryId = categoryId;
         this.category = category;
@@ -91,11 +91,11 @@ public class StyleModel {
         this.categoryId = categoryId;
     }
 
-    public StyleCategoryModel getCategory() {
+    public MStyleCategory getCategory() {
         return category;
     }
 
-    public void setCategory(StyleCategoryModel category) {
+    public void setCategory(MStyleCategory category) {
         this.category = category;
     }
 
